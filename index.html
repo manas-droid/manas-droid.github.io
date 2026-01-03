@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en" class="dark-theme">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manas Kalangan - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">Manas Kalangan</div>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links">
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#experience">Experience</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-label="Intro">
+        <div class="container">
+          <div class="hero-content">
+            <div class="profile-container">
+              <div class="profile-image-container" aria-hidden="true">
+                <img
+                  class="profile-image"
+                  src="images/profile-pic.png"
+                  alt="Portrait"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="social-links" aria-label="Social links">
+                <a href="mailto:manas.kalangan@gmail.com" class="fas fa-envelope" aria-label="Email"></a>
+                <a href="https://github.com/manas-droid" target="_blank" rel="noreferrer" class="fab fa-github" aria-label="Github"></a>
+                <a href="https://www.linkedin.com/in/manas-kalangan-35a352175/" target="_blank" rel="noreferrer" class="fab fa-linkedin" aria-label="Linkedin"></a>
+              </div>
+            </div>
+
+            <div class="hero-text">
+              <h1 class="name">Manas Kalangan</h1>
+              <div class="typewriter" aria-label="Roles">
+                <span id="typewriterText"></span><span class="cursor" aria-hidden="true"></span>
+              </div>
+
+              <div class="about-text">
+                <p>
+                  Hello! I am a Master's student in Computer Science and Engineering at the University at Buffalo
+                  with a strong foundation in backend engineering and systems thinking. 
+                  With ~3 years of professional experience as a .NET developer, I have built and shipped production-grade 
+                  software ranging from REST APIs and desktop applications to distributed systems components.
+
+
+                </p>
+                <p>
+                  I enjoy working close to the fundamentals like databases, system design, and performance, 
+                  while also exploring applied AI through explainable retrieval systems, RAG pipelines, and multimodal projects
+                  <a class="easter-egg" href="#projects">See my work</a>.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects" aria-label="Projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <img
+                src="images/artatlas.png"
+                alt="ArtAtlas screenshot"
+                loading="lazy"
+                style="width: 100%; height: 200px; object-fit: contain; display: block"
+              />
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="https://github.com/manas-droid/ArtAtlas" target="_blank" rel="noreferrer"
+                    >ArtAtlas</a
+                  >
+                  <span class="project-status">Complete</span>
+                  <a class="demo-link" href="#" target="_blank" rel="noreferrer">Demo</a>
+                </h3>
+                <p class="project-description">
+                    ArtAtlas is a local-first, explainable art retrieval system designed to answer why specific artworks 
+                    support art-historical ideas and not just what matches a query.
+
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="images/tiny-news-feed-service.png"
+                alt="News Feed Service screenshot"
+                loading="lazy"
+                style="width: 100%; height: 200px; object-fit: contain; display: block"
+              />
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="https://github.com/manas-droid/System-Design-Interview-Practice/tree/main/tiny-news-feed-service" target="_blank" rel="noreferrer"
+                    >News Feed</a
+                  >
+                  <span class="project-status">Complete</span>
+                  <a class="demo-link" href="#" target="_blank" rel="noreferrer">Demo</a>
+                </h3>
+                <p class="project-description">
+                    News Feed is a highly scalable news feed generation service, 
+                    similar to the core timeline functionality of platforms like Twitter or Facebook.
+                </p>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img
+                src="images/work-in-progress.jpeg"
+                alt="LexAtlas Screenshot"
+                loading="lazy"
+                style="width: 100%; height: 200px; object-fit: contain; display: block"
+              />
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="#" target="_blank" rel="noreferrer"
+                    >LexAtlas</a
+                  >
+                  <span class="project-status">In Progress</span>
+                </h3>
+                <p class="project-description">
+                  A language learning system that combines semantic retrieval, explanation graphs, 
+                  and contextual evidence to model vocabulary as a network, not a list.                
+                </p>
+              </div>
+            </article>
+
+
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section" id="experience" aria-label="Experience">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+
+          <div class="timeline" role="list">
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-title">Rocket Mortgage</div>
+                  <div class="timeline-period">May 2025 - August 2025</div>
+                </div>
+                <div class="timeline-position">Software Engineering Intern</div>
+                <div class="timeline-description">
+                  <ul>
+                    <li>Built high-scale .NET 8 REST APIs improving mortgage approval workflows, reducing escalations by 30%</li>
+                    <li>Upgraded AWS Lambda functions with Terraform, ensuring fault-tolerant deployments and certificate renewals</li>
+                    <li>Used SQL Server to design schemas, write queries, and optimize data operations aligned with compliance requirements.</li>
+                    <li> Applied AI-powered tools (Github Copilot) to accelerate unit testing and debugging, boosting code quality</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-title">Amdocs</div>
+                  <div class="timeline-period">Jan 2024 - Jul 2024</div>
+                </div>
+                <div class="timeline-position">Software Engineer</div>
+                <div class="timeline-description">
+
+                  <ul>
+                    <li>
+                      Collaborated within a Agile/Scrum team of 6 to enhance Ginger - an open source testing tool, using C# and WPF
+                    </li>
+                    <li>
+                      Optimized the web automation testing feature, reducing the test suite execution time by 60-90%
+                    </li>
+                    <li>
+                      Refactored legacy codebases applying SOLID and OOP design principles, improving developer experience
+                    </li>
+                    <li>
+                      Redesigned the OCR feature to enhance PDF readability, leading to a 40% improvement in text clarity
+                    </li>
+                    <li>
+                      Developed comprehensive Unit Tests for new and existing features using MSTest, achieving 90% code coverage
+                    </li>
+                    <li>
+                      Migrated LiteDB from version 4.1 to 5.0, enhancing data storage and retrieval efficiency while preventing file corruption
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item" role="listitem">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-title">Amdocs</div>
+                  <div class="timeline-period">Jul 2022 - Dec 2023</div>
+                </div>
+                <div class="timeline-position">Associate Software Engineer</div>
+                <div class="timeline-description">
+                  <ul>
+                    <li>
+                      Built internal support web app using ASP.NET MVC, improving client collaboration and issue tracking
+                    </li>
+                    <li>
+                      Resolved around 3,000 defects and 300 critical bugs, significantly boosting software stability and user satisfaction
+                    </li>
+                    <li>
+                      Boosted test coverage by 60% using Selenium for advanced web component testing, enhancing UI stability and reliability
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+             <div class="timeline-item" role="listitem">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <div class="timeline-title">HDFC Ergo General Insurance</div>
+                  <div class="timeline-period">Jul 2021 - Nov 2021</div>
+                </div>
+                <div class="timeline-position">Software Engineering Intern</div>
+                <div class="timeline-description">
+                  <ul>
+                    <li>
+                      Conducted a thorough codebase analysis of the company’s website to identify optimization opportunities
+                    </li>
+
+                    <li>
+                      Implemented performance enhancements, reducing load time by 35% and drop rate by 25%
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div>
+            <div>© <span id="year"></span> Manas Kalangan</div>
+            <div style="color: var(--text-secondary); font-size: 0.95rem">
+              Built with HTML + CSS.
+            </div>
+          </div>
+
+          <div class="footer-links" aria-label="Footer links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        const year = document.getElementById("year");
+        if (year) year.textContent = String(new Date().getFullYear());
+
+        const roles = ["Backend Developer", "MS CS - University at Buffalo"];
+        const typewriterText = document.getElementById("typewriterText");
+        if (!typewriterText) return;
+
+        let roleIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+
+        function tick() {
+          const current = roles[roleIndex] || "";
+          const nextText = deleting ? current.slice(0, charIndex - 1) : current.slice(0, charIndex + 1);
+          typewriterText.textContent = nextText;
+
+          if (!deleting && nextText === current) {
+            deleting = true;
+            setTimeout(tick, 1200);
+            return;
+          }
+
+          if (deleting && nextText.length === 0) {
+            deleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+          }
+
+          charIndex = nextText.length;
+          setTimeout(tick, deleting ? 45 : 65);
+        }
+
+        tick();
+      })();
+    </script>
+  </body>
+</html>
