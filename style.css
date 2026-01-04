@@ -393,11 +393,19 @@
     font-weight: 500;
     padding: 3px 8px;
     border-radius: 20px;
-    background-color: var(--accent-primary);
     color: white;
     margin-left: 8px;
     vertical-align: middle;
   }
+
+  .project-status-complete {
+    background-color: var(--accent-primary);
+  }
+
+  .project-status-inprogress {
+    background-color: #d81f47;
+  }
+
   
   .demo-link {
     font-size: 0.9rem;
