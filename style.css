@@ -347,11 +347,14 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
   }
   
   .project-card {
+    display: grid;
+    grid-template-columns: minmax(160px, 220px) 1fr;
+    gap: 20px;
     background-color: var(--card-bg);
     border-radius: 10px;
     overflow: hidden;
@@ -359,6 +362,13 @@
     transition: all 0.3s ease;
     height: 100%;
     border: 1px solid var(--card-border);
+  }
+
+  .project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
   }
   
   .project-card:hover {
@@ -562,6 +572,14 @@
   
     .projects-grid {
       grid-template-columns: 1fr;
+    }
+
+    .project-card {
+      grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+      height: 200px;
     }
   
     .timeline::before {
