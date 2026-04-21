@@ -1,12 +1,18 @@
 <!doctype html>
-<html lang="en" class="dark-theme">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Manas Kalangan - Portfolio</title>
+    <title>Manas Kalangan — Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="navbar">
@@ -14,55 +20,88 @@
         <div class="logo">M.K.</div>
         <nav aria-label="Primary navigation">
           <ul class="nav-links">
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#projects">Projects</a></li>
-            <li><a class="nav-link" href="#experience">Experience</a></li>
+            <li>
+              <a class="nav-link" href="#about"
+                ><span class="nav-num">01.</span> About</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="#projects"
+                ><span class="nav-num">02.</span> Projects</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="#experience"
+                ><span class="nav-num">03.</span> Experience</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="hero" id="home" aria-label="Intro">
+      <section class="hero" id="about" aria-label="Intro">
         <div class="container">
-          <div class="hero-content">
-            <div class="profile-container">
-              <div class="profile-image-container" aria-hidden="true">
-                <img
-                  class="profile-image"
-                  src="images/profile-pic.png"
-                  alt="Portrait"
-                  loading="lazy"
-                />
+          <div class="hero-layout">
+            <div class="hero-text">
+              <p class="hero-greeting">Hi, my name is</p>
+              <h1 class="name">Manas Kalangan.</h1>
+              <h2 class="hero-tagline">
+                <span id="typewriterText"></span
+                ><span class="cursor" aria-hidden="true">|</span>
+              </h2>
+              <div class="hero-bio">
+                <p>
+                  Currently building
+                  <a href="https://legitreach.com" target="_blank" rel="noreferrer">LegitReach</a>
+                  - a brand intelligence platform that monitors Reddit daily to
+                  surface customer pain points, buying signals, and competitor
+                  gaps for ecommerce brands. Live, with paying customers.
+                </p>
+                <p>
+                  MS CS student at the <strong>University at Buffalo</strong>
+                  (graduating May 2026), with 3 years of industry experience at
+                  Rocket Mortgage and Amdocs shipping high-scale .NET APIs,
+                  distributed systems, and testing infrastructure.
+                </p>
               </div>
-
               <div class="social-links" aria-label="Social links">
-                <a href="mailto:manas.kalangan@gmail.com" class="fas fa-envelope" aria-label="Email"></a>
-                <a href="https://github.com/manas-droid" target="_blank" rel="noreferrer" class="fab fa-github" aria-label="Github"></a>
-                <a href="https://www.linkedin.com/in/manas-kalangan-35a352175/" target="_blank" rel="noreferrer" class="fab fa-linkedin" aria-label="Linkedin"></a>
+                <a
+                  href="mailto:manas.kalangan@gmail.com"
+                  aria-label="Email"
+                  title="Email"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a
+                  href="https://github.com/manas-droid"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/manas-kalangan-35a352175/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
               </div>
             </div>
 
-            <div class="hero-text">
-              <h1 class="name">Manas Kalangan</h1>
-              <div class="typewriter" aria-label="Roles">
-                <span id="typewriterText"></span><span class="cursor" aria-hidden="true"></span>
-              </div>
-
-              <div class="about-text">
-                <p>
-                  Hello! I am a Master's student in Computer Science and Engineering at the University at Buffalo
-                  with a strong foundation in backend engineering and systems thinking. 
-                  With ~3 years of professional experience as a .NET developer, I have built and shipped production-grade 
-                  software ranging from REST APIs and desktop applications to distributed systems components.
-                  See my <a class="easter-egg" href="https://github.com/Ginger-Automation/Ginger/commits?author=manas-droid" target="_blank">open-source contributions</a>.
-
-                </p>
-                <p>
-                  I enjoy working close to the fundamentals like databases, system design, and performance, 
-                  while also exploring applied AI through explainable retrieval systems, RAG pipelines, and multimodal projects.
-                </p>
-              </div>
+            <div class="hero-image-wrap" aria-hidden="true">
+              <img
+                class="profile-image"
+                src="images/profile-pic.png"
+                alt="Manas Kalangan"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -70,184 +109,268 @@
 
       <section class="projects-section" id="projects" aria-label="Projects">
         <div class="container">
-          <h2 class="section-title">Projects</h2>
-          <div class="section-divider" aria-hidden="true"></div>
+          <h2 class="section-title">
+            <span class="section-num">02.</span> Projects
+          </h2>
 
           <div class="projects-grid">
-            <article class="project-card">
+            <a
+              class="project-card"
+              href="https://legitreach.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="images/legitreach.png"
+                alt="LegitReach screenshot"
+                loading="lazy"
+                class="project-image"
+              />
+              <div class="project-content">
+                <div class="project-header">
+                  <h3 class="project-title">LegitReach</h3>
+                  <div class="project-links">
+                    <button
+                      class="proj-link"
+                      onclick="event.stopPropagation(); window.open('https://github.com/legitReach/legit_reach_scout', '_blank', 'noreferrer')"
+                      aria-label="GitHub"
+                      title="GitHub"
+                    ><i class="fab fa-github"></i></button>
+                    <button
+                      class="proj-link"
+                      onclick="event.stopPropagation(); window.open('https://legitreach.com/', '_blank', 'noreferrer')"
+                      aria-label="Live site"
+                      title="Live site"
+                    ><i class="fas fa-external-link-alt"></i></button>
+                  </div>
+                </div>
+                <p class="project-description">
+                  AI-powered Reddit monitoring platform for ecommerce brands - surfaces pain points, buying signals, and competitor gaps daily. Reduced manual research time by 80%. Scaled to 3 paying customers.
+                </p>
+                <span class="project-tag">Next.js · PostgreSQL · Redis · Stripe</span>
+              </div>
+            </a>
+
+            <a
+              class="project-card"
+              href="https://www.youtube.com/watch?v=QGAWi0o7jrg"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src="images/artatlas.png"
                 alt="ArtAtlas screenshot"
                 loading="lazy"
-                style="width: 100%; height: 200px; object-fit: contain; display: block"
+                class="project-image"
               />
               <div class="project-content">
-                <h3 class="project-title">
-                  <a href="https://github.com/manas-droid/ArtAtlas" target="_blank" rel="noreferrer"
-                    >ArtAtlas</a
-                  >
-                  <span class="project-status project-status-complete">Complete</span>
-                  <a class="demo-link" href="https://www.youtube.com/watch?v=QGAWi0o7jrg" target="_blank" rel="noreferrer">Demo</a>
-                </h3>
+                <div class="project-header">
+                  <h3 class="project-title">ArtAtlas</h3>
+                  <div class="project-links">
+                    <button
+                      class="proj-link"
+                      onclick="event.stopPropagation(); window.open('https://github.com/manas-droid/ArtAtlas', '_blank', 'noreferrer')"
+                      aria-label="GitHub"
+                      title="GitHub"
+                    ><i class="fab fa-github"></i></button>
+                    <button
+                      class="proj-link"
+                      onclick="event.stopPropagation(); window.open('https://www.youtube.com/watch?v=QGAWi0o7jrg', '_blank', 'noreferrer')"
+                      aria-label="Demo video"
+                      title="Demo"
+                    ><i class="fas fa-external-link-alt"></i></button>
+                  </div>
+                </div>
                 <p class="project-description">
-                    ArtAtlas is a local-first, explainable art retrieval system designed to answer why specific artworks 
-                    support art-historical ideas and not just what matches a query.
-
+                  Explainable hybrid art search engine (keyword + semantic) with a deterministic concept layer - shows <em>why</em> each result appears, not just what matched.
                 </p>
+                <span class="project-tag">Python · PostgreSQL · pgvector · React</span>
               </div>
-            </article>
+            </a>
 
-            <article class="project-card">
+            <a
+              class="project-card"
+              href="https://www.youtube.com/watch?v=rp9CgLkcPys"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src="images/tiny-news-feed-service.png"
                 alt="News Feed Service screenshot"
                 loading="lazy"
-                style="width: 100%; height: 200px; object-fit: contain; display: block"
+                class="project-image"
               />
               <div class="project-content">
-                <h3 class="project-title">
-                  <a href="https://github.com/manas-droid/System-Design-Interview-Practice/tree/main/tiny-news-feed-service" target="_blank" rel="noreferrer"
-                    >News Feed</a
-                  >
-                  <span class="project-status project-status-complete">Complete</span>
-                  <a class="demo-link" href="https://www.youtube.com/watch?v=rp9CgLkcPys&pp=0gcJCU0KAYcqIYzv" target="_blank" rel="noreferrer">Demo</a>
-                </h3>
+                <div class="project-header">
+                  <h3 class="project-title">News Feed Service</h3>
+                  <div class="project-links">
+                    <button
+                      class="proj-link"
+                      onclick="event.stopPropagation(); window.open('https://github.com/manas-droid/System-Design-Interview-Practice/tree/main/tiny-news-feed-service', '_blank', 'noreferrer')"
+                      aria-label="GitHub"
+                      title="GitHub"
+                    ><i class="fab fa-github"></i></button>
+                    <button
+                      class="proj-link"
+                      onclick="event.stopPropagation(); window.open('https://www.youtube.com/watch?v=rp9CgLkcPys', '_blank', 'noreferrer')"
+                      aria-label="Demo video"
+                      title="Demo"
+                    ><i class="fas fa-external-link-alt"></i></button>
+                  </div>
+                </div>
                 <p class="project-description">
-                    News Feed is a highly scalable news feed generation service, 
-                    similar to the core timeline functionality of platforms like Twitter or Facebook.
+                  Twitter-like timeline service with a hybrid fan-out strategy, async Kafka write pipeline, and a read-optimized feed that merges Redis inboxes with pulled posts from high-follower users.
                 </p>
+                <span class="project-tag">Node.js · PostgreSQL · Redis · Kafka</span>
               </div>
-          
-            </article>
+            </a>
 
-              <article class="project-card">
+            <a
+              class="project-card"
+              href="https://youtu.be/-GxBzRWfq5g"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 src="images/progression-palette.png"
-                alt="Progression Palette Screenshot"
+                alt="ProgressionPalette Screenshot"
                 loading="lazy"
-                style="width: 100%; height: 200px; object-fit: contain; display: block"
+                class="project-image"
               />
               <div class="project-content">
-                <h3 class="project-title">
-                  <a href="https://github.com/manas-droid/ProgressionPalette" target="_blank" rel="noreferrer"
-                    >Chord Prog Gen</a
-                  >
-                  <span class="project-status project-status-complete">Complete</span>
-                  <a class="demo-link" href="https://youtu.be/-GxBzRWfq5g" target="_blank" rel="noreferrer">Demo</a>
-                </h3>
+                <div class="project-header">
+                  <h3 class="project-title">ProgressionPalette</h3>
+                  <div class="project-links">
+                    <button
+                      class="proj-link"
+                      onclick="event.stopPropagation(); window.open('https://github.com/manas-droid/ProgressionPalette', '_blank', 'noreferrer')"
+                      aria-label="GitHub"
+                      title="GitHub"
+                    ><i class="fab fa-github"></i></button>
+                    <button
+                      class="proj-link"
+                      onclick="event.stopPropagation(); window.open('https://youtu.be/-GxBzRWfq5g', '_blank', 'noreferrer')"
+                      aria-label="Demo video"
+                      title="Demo"
+                    ><i class="fas fa-external-link-alt"></i></button>
+                  </div>
+                </div>
                 <p class="project-description">
-                  An AI-assisted music system that uses data-driven reasoning and probabilistic sampling. 
-                  Not a black-box model, to generate emotion-based chord progressions in an explainable way                </p>
+                  Emotion-aware chord progression generator using rule-based harmony and probabilistic sampling - no black-box ML, fully interpretable outputs.
+                </p>
+                <span class="project-tag">Python · music21 · Wikifonia</span>
               </div>
-            </article>
-            
-
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="experience-section" id="experience" aria-label="Experience">
+      <section
+        class="experience-section"
+        id="experience"
+        aria-label="Experience"
+      >
         <div class="container">
-          <h2 class="section-title">Experience</h2>
-          <div class="section-divider" aria-hidden="true"></div>
+          <h2 class="section-title">
+            <span class="section-num">03.</span> Experience
+          </h2>
 
           <div class="timeline" role="list">
             <div class="timeline-item" role="listitem">
-              <div class="timeline-dot" aria-hidden="true"></div>
-              <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-period">May – Aug 2025</span>
+              </div>
+              <div class="timeline-body">
                 <div class="timeline-header">
-                  <div class="timeline-title">Rocket Mortgage</div>
-                  <div class="timeline-period">May 2025 - August 2025</div>
+                  <span class="timeline-title">Rocket Mortgage</span>
+                  <span class="timeline-position"
+                    >Software Engineering Intern</span
+                  >
                 </div>
-                <div class="timeline-position">Software Engineering Intern</div>
-                <div class="timeline-description">
-                  <ul>
-                    <li>Built high-scale .NET 8 REST APIs improving mortgage approval workflows, reducing escalations by 30%</li>
-                    <li>Upgraded AWS Lambda functions with Terraform, ensuring fault-tolerant deployments and certificate renewals</li>
-                    <li>Used SQL Server to design schemas, write queries, and optimize data operations aligned with compliance requirements.</li>
-                    <li> Applied AI-powered tools (Github Copilot) to accelerate unit testing and debugging, boosting code quality</li>
-                  </ul>
-                </div>
+                <ul class="timeline-description">
+                  <li>
+                    Built high-scale .NET 8 REST APIs improving mortgage
+                    approval workflows, reducing escalations by 30%
+                  </li>
+                  <li>
+                    Upgraded AWS Lambda functions with Terraform, ensuring
+                    fault-tolerant deployments and certificate renewals
+                  </li>
+                  <li>
+                    Designed schemas and optimized SQL Server queries aligned
+                    with compliance requirements
+                  </li>
+                  <li>
+                    Leveraged GitHub Copilot to accelerate unit testing and
+                    debugging, boosting code quality
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div class="timeline-item" role="listitem">
-              <div class="timeline-dot" aria-hidden="true"></div>
-              <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-period">Jan – Jul 2024</span>
+              </div>
+              <div class="timeline-body">
                 <div class="timeline-header">
-                  <div class="timeline-title">Amdocs</div>
-                  <div class="timeline-period">Jan 2024 - Jul 2024</div>
+                  <span class="timeline-title">Amdocs</span>
+                  <span class="timeline-position">Software Engineer</span>
                 </div>
-                <div class="timeline-position">Software Engineer</div>
-                <div class="timeline-description">
-
-                  <ul>
-                    <li>
-                      Collaborated within a Agile/Scrum team of 6 to enhance Ginger - an open source testing tool, using C# and WPF
-                    </li>
-                    <li>
-                      Optimized the web automation testing feature, reducing the test suite execution time by 60-90%
-                    </li>
-                    <li>
-                      Refactored legacy codebases applying SOLID and OOP design principles, improving developer experience
-                    </li>
-                    <li>
-                      Redesigned the OCR feature to enhance PDF readability, leading to a 40% improvement in text clarity
-                    </li>
-                    <li>
-                      Developed comprehensive Unit Tests for new and existing features using MSTest, achieving 90% code coverage
-                    </li>
-                    <li>
-                      Migrated LiteDB from version 4.1 to 5.0, enhancing data storage and retrieval efficiency while preventing file corruption
-                    </li>
-                  </ul>
-                </div>
+                <ul class="timeline-description">
+                  <li>
+                    Enhanced Ginger - an open-source testing tool - in an
+                    Agile/Scrum team of 6, using C# and WPF
+                  </li>
+                  <li>
+                    Optimized web automation testing, reducing test suite
+                    execution time by 60-90%
+                  </li>
+                  <li>
+                    Refactored legacy codebases applying SOLID and OOP
+                    principles, improving developer experience
+                  </li>
+                  <li>
+                    Redesigned OCR feature for PDF readability, achieving a 40%
+                    improvement in text clarity
+                  </li>
+                  <li>
+                    Wrote comprehensive MSTest unit tests for new and existing
+                    features, achieving 90% code coverage
+                  </li>
+                  <li>
+                    Migrated LiteDB from v4.1 to v5.0, enhancing storage
+                    efficiency and preventing file corruption
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div class="timeline-item" role="listitem">
-              <div class="timeline-dot" aria-hidden="true"></div>
-              <div class="timeline-content">
-                <div class="timeline-header">
-                  <div class="timeline-title">Amdocs</div>
-                  <div class="timeline-period">Jul 2022 - Dec 2023</div>
-                </div>
-                <div class="timeline-position">Associate Software Engineer</div>
-                <div class="timeline-description">
-                  <ul>
-                    <li>
-                      Built internal support web app using ASP.NET MVC, improving client collaboration and issue tracking
-                    </li>
-                    <li>
-                      Resolved around 3,000 defects and 300 critical bugs, significantly boosting software stability and user satisfaction
-                    </li>
-                    <li>
-                      Boosted test coverage by 60% using Selenium for advanced web component testing, enhancing UI stability and reliability
-                    </li>
-                  </ul>
-                </div>
+              <div class="timeline-meta">
+                <span class="timeline-period">Jul 2022 – Dec 2023</span>
               </div>
-            </div>
-
-             <div class="timeline-item" role="listitem">
-              <div class="timeline-dot" aria-hidden="true"></div>
-              <div class="timeline-content">
+              <div class="timeline-body">
                 <div class="timeline-header">
-                  <div class="timeline-title">HDFC Ergo General Insurance</div>
-                  <div class="timeline-period">Jul 2021 - Nov 2021</div>
+                  <span class="timeline-title">Amdocs</span>
+                  <span class="timeline-position"
+                    >Associate Software Engineer</span
+                  >
                 </div>
-                <div class="timeline-position">Software Engineering Intern</div>
-                <div class="timeline-description">
-                  <ul>
-                    <li>
-                      Conducted a thorough codebase analysis of the company’s website to identify optimization opportunities
-                    </li>
-
-                    <li>
-                      Implemented performance enhancements, reducing load time by 35% and drop rate by 25%
-                    </li>
-                  </ul>
-                </div>
+                <ul class="timeline-description">
+                  <li>
+                    Built an internal support web app using ASP.NET MVC,
+                    improving client collaboration and issue tracking
+                  </li>
+                  <li>
+                    Resolved ~3,000 defects and 300 critical bugs, significantly
+                    boosting software stability
+                  </li>
+                  <li>
+                    Boosted test coverage by 60% using Selenium for advanced web
+                    component testing
+                  </li>
+                </ul>
               </div>
             </div>
 
@@ -258,20 +381,6 @@
 
     <footer>
       <div class="container">
-        <div class="footer-content">
-          <div>
-            <div>© <span id="year"></span> Manas Kalangan</div>
-            <div style="color: var(--text-secondary); font-size: 0.95rem">
-              Built with HTML + CSS.
-            </div>
-          </div>
-
-          <div class="footer-links" aria-label="Footer links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-          </div>
-        </div>
       </div>
     </footer>
 
@@ -280,7 +389,13 @@
         const year = document.getElementById("year");
         if (year) year.textContent = String(new Date().getFullYear());
 
-        const roles = ["Backend Developer", "MS CS - University at Buffalo"];
+        const roles = [
+          "Backend Developer",
+          "SaaS Builder",
+          "Full Stack Developer",
+          ".NET Developer",
+          "Open Source Contributor"
+        ];
         const typewriterText = document.getElementById("typewriterText");
         if (!typewriterText) return;
 
@@ -290,12 +405,14 @@
 
         function tick() {
           const current = roles[roleIndex] || "";
-          const nextText = deleting ? current.slice(0, charIndex - 1) : current.slice(0, charIndex + 1);
+          const nextText = deleting
+            ? current.slice(0, charIndex - 1)
+            : current.slice(0, charIndex + 1);
           typewriterText.textContent = nextText;
 
           if (!deleting && nextText === current) {
             deleting = true;
-            setTimeout(tick, 1200);
+            setTimeout(tick, 1400);
             return;
           }
 
@@ -305,7 +422,7 @@
           }
 
           charIndex = nextText.length;
-          setTimeout(tick, deleting ? 45 : 65);
+          setTimeout(tick, deleting ? 40 : 60);
         }
 
         tick();
