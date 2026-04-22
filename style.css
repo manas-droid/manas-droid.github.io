@@ -216,6 +216,31 @@ strong {
   background: var(--accent-tint);
 }
 
+.say-hello-btn {
+  background: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  padding: 0 18px;
+  height: 42px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  letter-spacing: 0.02em;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.say-hello-btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.say-hello-btn.copied {
+  background: var(--accent);
+  color: var(--bg);
+}
+
 /* =====================================================
    Hero Image
    ===================================================== */
@@ -283,6 +308,30 @@ section {
   color: var(--accent);
   font-size: 1.1rem;
   font-weight: 400;
+}
+
+/* =====================================================
+   Nav live dot
+   ===================================================== */
+.nav-link-building {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent) !important;
+}
+
+.nav-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
 }
 
 /* =====================================================
@@ -567,6 +616,20 @@ body {
 
   .section-title::after {
     display: none;
+  }
+
+  .building-layout {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .building-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .building-card {
+    padding: 28px 24px;
   }
 
   .timeline-item {

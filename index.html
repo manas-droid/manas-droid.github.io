@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Manas Kalangan — Portfolio</title>
+    <title>Manas Kalangan - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -17,7 +18,7 @@
   <body>
     <header class="navbar">
       <div class="container">
-        <div class="logo">M.K.</div>
+        <div class="logo">Manas</div>
         <nav aria-label="Primary navigation">
           <ul class="nav-links">
             <li>
@@ -61,19 +62,24 @@
                 </p>
                 <p>
                   MS CS student at the <strong>University at Buffalo</strong>
-                  (graduating May 2026), with 3 years of industry experience at
+                  (graduating May 2026), with ~3 years of industry experience at
                   Rocket Mortgage and Amdocs shipping high-scale .NET APIs,
                   distributed systems, and testing infrastructure.
                 </p>
               </div>
               <div class="social-links" aria-label="Social links">
-                <a
-                  href="mailto:manas.kalangan@gmail.com"
-                  aria-label="Email"
-                  title="Email"
-                >
-                  <i class="fas fa-envelope"></i>
-                </a>
+                <button
+                  class="say-hello-btn"
+                  id="copyEmailBtn"
+                  aria-label="Copy email address"
+                  title="Copy email"
+                ><i class="fas fa-envelope"></i> <span id="copyEmailText">Say Hello</span></button>
+                <button
+                  class="say-hello-btn"
+                  onclick="window.open('resources/Kalangan-Manas-Resume.pdf', '_blank', 'noreferrer')"
+                  aria-label="View Resume"
+                  title="Resume"
+                ><i class="fas fa-file-alt"></i> Resume</button>
                 <a
                   href="https://github.com/manas-droid"
                   target="_blank"
@@ -84,7 +90,7 @@
                   <i class="fab fa-github"></i>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/manas-kalangan-35a352175/"
+                  href="https://www.linkedin.com/in/manaskalangan/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"
@@ -301,7 +307,7 @@
                     with compliance requirements
                   </li>
                   <li>
-                    Leveraged GitHub Copilot to accelerate unit testing and
+                    Leveraged Github Copilot and Claude Code to accelerate unit testing and
                     debugging, boosting code quality
                   </li>
                 </ul>
@@ -310,7 +316,7 @@
 
             <div class="timeline-item" role="listitem">
               <div class="timeline-meta">
-                <span class="timeline-period">Jan – Jul 2024</span>
+                <span class="timeline-period">Jul 2022 - Jul 2024</span>
               </div>
               <div class="timeline-body">
                 <div class="timeline-header">
@@ -319,56 +325,22 @@
                 </div>
                 <ul class="timeline-description">
                   <li>
-                    Enhanced Ginger - an open-source testing tool - in an
-                    Agile/Scrum team of 6, using C# and WPF
+                    Optimized web automation testing on Ginger (open-source, C# / WPF), reducing test suite execution time by 60-90%
                   </li>
                   <li>
-                    Optimized web automation testing, reducing test suite
-                    execution time by 60-90%
+                    Redesigned OCR feature for PDF readability, achieving a 40% improvement in text clarity
                   </li>
                   <li>
-                    Refactored legacy codebases applying SOLID and OOP
-                    principles, improving developer experience
+                    Achieved 90% code coverage with MSTest across new and legacy features
                   </li>
                   <li>
-                    Redesigned OCR feature for PDF readability, achieving a 40%
-                    improvement in text clarity
+                    Built an internal support web app using ASP.NET MVC, improving client collaboration and issue tracking
                   </li>
                   <li>
-                    Wrote comprehensive MSTest unit tests for new and existing
-                    features, achieving 90% code coverage
+                    Authored ~200 unit tests using MSTest framework for new and legacy features, achieving 90% code coverage 
                   </li>
                   <li>
-                    Migrated LiteDB from v4.1 to v5.0, enhancing storage
-                    efficiency and preventing file corruption
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item" role="listitem">
-              <div class="timeline-meta">
-                <span class="timeline-period">Jul 2022 – Dec 2023</span>
-              </div>
-              <div class="timeline-body">
-                <div class="timeline-header">
-                  <span class="timeline-title">Amdocs</span>
-                  <span class="timeline-position"
-                    >Associate Software Engineer</span
-                  >
-                </div>
-                <ul class="timeline-description">
-                  <li>
-                    Built an internal support web app using ASP.NET MVC,
-                    improving client collaboration and issue tracking
-                  </li>
-                  <li>
-                    Resolved ~3,000 defects and 300 critical bugs, significantly
-                    boosting software stability
-                  </li>
-                  <li>
-                    Boosted test coverage by 60% using Selenium for advanced web
-                    component testing
+                    Resolved around 3,000 defects and 300 critical bugs, significantly boosting software stability and user satisfaction
                   </li>
                 </ul>
               </div>
@@ -426,6 +398,22 @@
         }
 
         tick();
+
+        const copyBtn = document.getElementById("copyEmailBtn");
+        const copyEmailText = document.getElementById("copyEmailText");
+        if (copyBtn && copyEmailText) {
+          copyBtn.addEventListener("click", function () {
+            window.location.href = "mailto:manas.kalangan@gmail.com";
+            navigator.clipboard.writeText("manas.kalangan@gmail.com").then(function () {
+              copyEmailText.textContent = "Copied!";
+              copyBtn.classList.add("copied");
+              setTimeout(function () {
+                copyEmailText.textContent = "Say Hello";
+                copyBtn.classList.remove("copied");
+              }, 1000);
+            });
+          });
+        }
       })();
     </script>
   </body>
